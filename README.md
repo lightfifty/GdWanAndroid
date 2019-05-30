@@ -1,4 +1,4 @@
-# GdWanAndroid
+# WxWanAndroid
 基于wanandroid的API开发自己的App
 
 ## Version
