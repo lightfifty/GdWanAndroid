@@ -1,7 +1,8 @@
 # GdWanAndroid
 基于wanandroid的API开发自己的App
 
-----------
+## Version
+
 ## Thanks
 
 ### API:
@@ -9,19 +10,6 @@
 
 ### APP:
 主要参考了[JsonChao](https://github.com/JsonChao) 的 [Awesome-WanAndroid](https://github.com/JsonChao/Awesome-WanAndroid)项目。
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 License
 Copyright 2019 lightfifty
