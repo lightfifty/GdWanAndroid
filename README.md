@@ -1,6 +1,24 @@
 # gdwanandroid
 基于wanandroid的API开发自己的App
 
+----------
+## Thanks
+
+### API:
+感谢鸿洋大神的API  [WanAndroid API](https://www.wanandroid.com/blog/show/2)
+
+### APP:
+主要参考了[JsonChao](https://github.com/JsonChao) 的 [Awesome-WanAndroid](https://github.com/JsonChao/Awesome-WanAndroid)项目。
+
+
+
+
+
+
+
+
+
+
 
 
 
