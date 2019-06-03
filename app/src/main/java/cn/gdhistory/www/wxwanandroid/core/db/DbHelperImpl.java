@@ -23,12 +23,12 @@ public class DbHelperImpl implements DbHelper {
     private HistoryData mHistoryData;
 
     public DbHelperImpl() {
-        mDaoSession= WxApp.getInstance().getDaoSession();
+        mDaoSession = WxApp.getInstance().getDaoSession();
     }
 
     @Override
     public List<HistoryData> addHistoryData(String data) {
-        this.mData=data;
+        this.mData = data;
         getHistoryDataList();
         createHistoryData();
 
@@ -46,14 +46,22 @@ public class DbHelperImpl implements DbHelper {
         return null;
     }
 
-    private void getHistoryDataList(){
-        mHistoryDataList=getHistoryDataDao().loadAll();
+    /**
+     * 从数据库加载数据
+     */
+    private void getHistoryDataList() {
+        mHistoryDataList = getHistoryDataDao().loadAll();
     }
-    private HistoryDataDao getHistoryDataDao(){
+
+    private HistoryDataDao getHistoryDataDao() {
         return mDaoSession.getHistoryDataDao();
     }
-    private void createHistoryData(){
-        mHistoryData=new HistoryData();
+
+    /**
+     *
+     */
+    private void createHistoryData() {
+        mHistoryData = new HistoryData();
         mHistoryData.setDate(System.currentTimeMillis());
         mHistoryData.setData(mData);
     }
