@@ -1,7 +1,5 @@
 package com.wux.wxwanandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.animation.Animator;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +7,7 @@ import android.view.View;
 
 import com.wux.wxwanandroid.databinding.ActivityWelcomeBinding;
 
-import java.lang.reflect.AnnotatedElement;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -24,7 +22,7 @@ public class WelcomeActivity extends AppCompatActivity {
         mBinding.lavAnimCenter.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                Intent intent = new Intent(WelcomeActivity.this,MainActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this,HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
