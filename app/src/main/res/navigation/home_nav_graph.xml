@@ -8,26 +8,26 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.wux.wxwanandroid.ui.home.HomeFragment"
-        android:label="fragment_home"
+        android:label="@string/home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/navigation_knowledge"
         android:name="com.wux.wxwanandroid.ui.knowledge.KnowledgeFragment"
-        android:label="fragment_dashboard"
+        android:label="@string/knowledge"
         tools:layout="@layout/fragment_knowledge" />
     <fragment
         android:id="@+id/navigation_square"
         android:name="com.wux.wxwanandroid.ui.square.SquareFragment"
-        android:label="fragment_notifications"
+        android:label="@string/square"
         tools:layout="@layout/fragment_square" />
     <fragment
         android:id="@+id/navigation_faqs"
         android:name="com.wux.wxwanandroid.ui.faqs.FaqsFragment"
-        android:label="faqs_fragment"
+        android:label="@string/faqs"
         tools:layout="@layout/faqs_fragment" />
     <fragment
         android:id="@+id/navigation_offical_accounts"
         android:name="com.wux.wxwanandroid.ui.officialaccounts.OfficalAccountsFragment"
-        android:label="offical_accounts_fragment"
+        android:label="@string/official_accounts"
         tools:layout="@layout/offical_accounts_fragment" />
 </navigation>

@@ -5,12 +5,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.scwang.smart.refresh.layout.api.RefreshLayout;
+import com.scwang.smart.refresh.layout.listener.OnLoadMoreListener;
+import com.scwang.smart.refresh.layout.listener.OnRefreshListener;
 import com.wux.wxwanandroid.databinding.FragmentHomeBinding;
 
+import org.jetbrains.annotations.NotNull;
+
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 public class HomeFragment extends Fragment {
@@ -21,19 +24,35 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        mHomeBinding = FragmentHomeBinding.inflate(inflater,container,false);
-
+        mHomeBinding = FragmentHomeBinding.inflate(inflater, container, false);
         homeViewModel =
                 new ViewModelProvider(this).get(HomeViewModel.class);
-
-
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                mHomeBinding.textHome.setText(s);
-            }
-        });
+        initView();
+//
+//        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                mHomeBinding.textHome.setText(s);
+//            }
+//        });
         return mHomeBinding.getRoot();
+    }
+
+    private void initView() {
+       mHomeBinding.srlHome.setOnRefreshListener(new OnRefreshListener() {
+           @Override
+           public void onRefresh(@NonNull @NotNull RefreshLayout refreshLayout) {
+
+           }
+       });
+
+       mHomeBinding.srlHome.setOnLoadMoreListener(new OnLoadMoreListener() {
+           @Override
+           public void onLoadMore(@NonNull @NotNull RefreshLayout refreshLayout) {
+
+           }
+       });
+
     }
 
     @Override

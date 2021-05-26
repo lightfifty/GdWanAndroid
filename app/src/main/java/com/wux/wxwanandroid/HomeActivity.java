@@ -34,11 +34,19 @@ public class HomeActivity extends AppCompatActivity {
                 Snackbar.make(view, R.string.go_to_top, Snackbar.LENGTH_SHORT).setAction("取消", null).show();
             }
         });
-
-        AppBarConfiguration bottomBarConfiguration = new AppBarConfiguration.Builder(R.id.navigation_home, R.id.navigation_knowledge, R.id.navigation_square).build();
+        // 设置顶部要关联的item，
+        AppBarConfiguration bottomBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_home,
+                R.id.navigation_knowledge,
+                R.id.navigation_square,
+                R.id.navigation_faqs,
+                R.id.navigation_offical_accounts).build();
+        // 创建NavController
         NavController bottomBarNavController = Navigation.findNavController(this,R.id.home_fragment);
-        NavigationUI.setupActionBarWithNavController(this, bottomBarNavController, bottomBarConfiguration);
+        // 为底部导航栏创建设置控制器
         NavigationUI.setupWithNavController(mBinding.content.bnvHomeNavBottom,bottomBarNavController);
+        // 建立顶部toolbar和底部导航栏的关联
+        NavigationUI.setupActionBarWithNavController(this, bottomBarNavController, bottomBarConfiguration);
     }
 
 }
