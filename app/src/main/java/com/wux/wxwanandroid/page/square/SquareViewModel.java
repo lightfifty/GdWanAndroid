@@ -1,4 +1,4 @@
-package com.wux.wxwanandroid.ui.square;
+package com.wux.wxwanandroid.page.square;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

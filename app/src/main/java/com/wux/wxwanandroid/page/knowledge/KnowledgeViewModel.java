@@ -1,4 +1,4 @@
-package com.wux.wxwanandroid.ui.knowledge;
+package com.wux.wxwanandroid.page.knowledge;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

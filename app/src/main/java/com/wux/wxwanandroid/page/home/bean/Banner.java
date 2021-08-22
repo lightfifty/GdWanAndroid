@@ -1,4 +1,4 @@
-package com.wux.wxwanandroid.ui.home.bean;
+package com.wux.wxwanandroid.page.home.bean;
 
 /**
  * Description:
@@ -19,7 +19,7 @@ package com.wux.wxwanandroid.ui.home.bean;
  *             "url":"https://flutter.cn/"
  *         }
  */
-class Banner {
+public class Banner {
     String desc;
     long id;
     String imagePath;

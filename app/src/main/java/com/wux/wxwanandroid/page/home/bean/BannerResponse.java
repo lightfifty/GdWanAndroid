@@ -1,4 +1,4 @@
-package com.wux.wxwanandroid.ui.home.bean;
+package com.wux.wxwanandroid.page.home.bean;
 
 import com.wux.wxwanandroid.bean.BaseResponse;
 

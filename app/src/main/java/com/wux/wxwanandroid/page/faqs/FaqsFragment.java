@@ -1,4 +1,4 @@
-package com.wux.wxwanandroid.ui.faqs;
+package com.wux.wxwanandroid.page.faqs;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

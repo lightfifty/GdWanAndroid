@@ -1,5 +1,7 @@
 package com.wux.wxwanandroid.base;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import androidx.fragment.app.Fragment;
 
 /**
@@ -10,7 +12,11 @@ import androidx.fragment.app.Fragment;
  * @time: 2021/5/8 16:18.
  * version: 1.0
  */
-class BaseFragment extends Fragment {
+public class BaseFragment extends Fragment {
 
+
+    public void showSnackBarMsg(String msg) {
+        Snackbar.make(getView(), msg, Snackbar.LENGTH_SHORT).show();
+    }
 
 }

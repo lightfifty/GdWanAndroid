@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.wux.wxwanandroid.ui.home.HomeFragment"
+        android:name="com.wux.wxwanandroid.page.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/navigation_knowledge"
-        android:name="com.wux.wxwanandroid.ui.knowledge.KnowledgeFragment"
+        android:name="com.wux.wxwanandroid.page.knowledge.KnowledgeFragment"
         android:label="fragment_dashboard"
         tools:layout="@layout/fragment_knowledge" />
     <fragment
         android:id="@+id/navigation_square"
-        android:name="com.wux.wxwanandroid.ui.square.SquareFragment"
+        android:name="com.wux.wxwanandroid.page.square.SquareFragment"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_square" />
     <fragment
         android:id="@+id/navigation_faqs"
-        android:name="com.wux.wxwanandroid.ui.faqs.FaqsFragment"
+        android:name="com.wux.wxwanandroid.page.faqs.FaqsFragment"
         android:label="faqs_fragment"
         tools:layout="@layout/faqs_fragment" />
     <fragment
         android:id="@+id/navigation_offical_accounts"
-        android:name="com.wux.wxwanandroid.ui.officialaccounts.OfficalAccountsFragment"
+        android:name="com.wux.wxwanandroid.page.officialaccounts.OfficalAccountsFragment"
         android:label="offical_accounts_fragment"
         tools:layout="@layout/offical_accounts_fragment" />
 </navigation>

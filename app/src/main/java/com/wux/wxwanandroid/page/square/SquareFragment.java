@@ -1,4 +1,4 @@
-package com.wux.wxwanandroid.ui.square;
+package com.wux.wxwanandroid.page.square;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

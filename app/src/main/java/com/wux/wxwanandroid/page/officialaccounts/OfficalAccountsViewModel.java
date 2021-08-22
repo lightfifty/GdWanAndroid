@@ -1,4 +1,4 @@
-package com.wux.wxwanandroid.ui.officialaccounts;
+package com.wux.wxwanandroid.page.officialaccounts;
 
 import androidx.lifecycle.ViewModel;
 
